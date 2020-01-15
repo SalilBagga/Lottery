@@ -10,7 +10,7 @@ class Lottery extends Component {
   };
   constructor(props) {
     super(props);
-    this.state = { num: [] };
+    this.state = { num: Array.from({ length: this.props.numBalls }) };
     this.genNum = this.genNum.bind(this);
   }
   genNum() {
@@ -27,7 +27,9 @@ class Lottery extends Component {
       <div className="boundary">
         <h1>{this.props.title}</h1>
         <LotteryBall num={this.state.num} />
-        <button onClick={this.genNum}>Generate</button>
+        <button className="genbutton" onClick={this.genNum}>
+          Generate
+        </button>
       </div>
     );
   }
