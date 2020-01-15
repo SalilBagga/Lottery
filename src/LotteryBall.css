@@ -1,0 +1,23 @@
+.ball {
+  background-color: brown;
+  color: white;
+  display: inline-block;
+  /* margin-right: 0.5em; */
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.boundary {
+  border: 2px solid blue;
+  border-radius: 25px;
+  /* border-width: 5px; */
+  /* background-color: grey; */
+  /* width: 95%; */
+  margin-left: 15em;
+
+  margin-right: 15em;
+}
+.genbutton {
+  background-color: blue;
+}
